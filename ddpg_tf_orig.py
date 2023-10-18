@@ -1,13 +1,13 @@
-#Need a class for replay buffer
-#Need a class for a target Q network (function of s, a)
-#We will use batch norm 
-#the policy is deterministic, how to handle explore eploit?
-#deterministic policy means outputs the actual action instead of probability
-#will need a way to bound the actions to the env limits
-#We have two actor and two critic networks, a target for each
+#A class for replay buffer
+#A class for a target Q network (function of s, a)
+#used batch norm 
+#the policy is deterministic, and I handled explore eploit
+#deterministic policy outputs the actual action instead of probability
+#found a way to bound the actions to the env limits
+#presented two actor and two critic networks and a target for each
 #Updates are soft, according to theta_prime = tau*theta + (1-tau)*theta_prime, with tau << 1
 #The target actor is just the evaluation actor plus some noise process
-#they used Ornstein Uhlenbeck, (will need to look that up) -> will need a class for noise
+#the algorithm used Ornstein Uhlenbeck, so provided a class for noise
 
 import os
 import numpy as np
