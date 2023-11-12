@@ -1,2 +1,3 @@
 # Exploration of Model Free Reinforcement Learning Algorithms 
 
+Q-Learning. Methods in this family learn an approximator Q_{\theta}(s,a) for the optimal action-value function, Q^*(s,a). Typically they use an objective function based on the Bellman equation. This optimization is almost always performed off-policy, which means that each update can use data collected at any point during training, regardless of how the agent was choosing to explore the environment when the data was obtained. The corresponding policy is obtained via the connection between Q^* and \pi^*: the actions taken by the Q-learning agent are given by
