@@ -1,5 +1,7 @@
 # Model Free Reinforcement Learning
 
+Research papers for beginners
+
 | **PAPERS** | **LINK** |
 |------------|----------|
 | Playing Atari with Deep Reinforcement Learning | [arXiv](https://arxiv.org/abs/1312.5602) |
